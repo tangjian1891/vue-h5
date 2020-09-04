@@ -1,0 +1,115 @@
+/* 注释: 引入自定义针对H5移动端的 兼容性问题。各种各样稀奇古怪的css */
+
+/* 禁止ios和android用户选中文字 */
+html,
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* 转变盒模型为怪异盒模型 */
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+span,
+strong,
+b,
+i,
+em,
+input {
+  box-sizing: border-box;
+}
+/*  设置标题标签 取消 加粗 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* 去掉列表前的小圆点 */
+
+ol,
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+
+/*  表格 ，合并边框 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 输入框，下拉选择。取消默认外边框 */
+input,
+select {
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+/* 去除按钮蓝色边框 */
+a,
+button,
+input,
+textarea,
+span,
+div,
+em,
+i,
+img {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+  outline: none;
+  border: none;
+}
+/* ios中，微信中出现placeholder 文本偏上 */
+input {
+  line-height: normal !important;
+}
+
+/*去掉a标签的下划线 */
+a {
+  color: #666;
+  text-decoration: none;
+}
+/* 禁用select默认箭头 */
+select::-ms-expand {
+  display: none;
+}
+
+/* 删除页面上所有搜索字段上的清除按钮 start */
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+/* 删除页面上所有搜索字段上的清除按钮 end */

@@ -1,0 +1,11 @@
+/*  公共样式变量 颜色 。会在webpack中配置，这样会注入到所有页面中,可以很方便的使用变量，可以用来做皮肤变换*/
+$font-title: #333; //标题
+$font-content: #454545; //字体正文
+$font-tip: #999; //说明提示
+$active-color: #3e95f5; //选中高亮
+
+$bg-default: #f7f7f7; //默认背景色
+
+$color-defalt: #3e95f5; //默认主色
+$color-second: #ffb14e; //第二辅色
+$color-little: #f6faff; //点缀颜色

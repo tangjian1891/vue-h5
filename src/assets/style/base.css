@@ -1,0 +1,21 @@
+/* 业务公共css全部放这里 */
+html {
+  height: 100%;
+  width: 100%;
+}
+/* 滚动 */
+.scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+/* 小手 */
+.handle {
+  cursor: pointer;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
